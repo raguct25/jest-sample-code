@@ -1,5 +1,9 @@
-const sumTest = require('./ragu'); //reguire is our file name
+const addAns = require('./add'); //reguire is our file name
+const mulAns = require('./mul');
 
-test('adds 1 + 2 to equal 3', () => {
-  expect(sumTest(1, 2)).toBe(3);
+test('addAns() to be return to 6', ()=>{
+  expect(addAns(4, 2)).toBe(6);
+});
+test('mulAns() to be return to 8', ()=>{
+  expect(mulAns(4, 2)).toBe(8);
 });
